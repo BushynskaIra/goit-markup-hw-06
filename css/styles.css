@@ -562,8 +562,8 @@ gap: 40px;
 }
  .portfolio-link{
     color: inherit;
-    }
-.portfolio-overlay{
+}
+.portfolio-overlay {
     background-color: var(--color-brand);
     position: absolute;
     top: 0;
