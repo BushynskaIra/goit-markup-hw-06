@@ -385,7 +385,7 @@ img {
 .footer-text {
   color: var(--color-secondary-light);
   letter-spacing: 0.02em;
-  max-width: 264px;
+  width: 264px;
   margin-top: 16px;
 }
 .footer-social-title {
@@ -398,11 +398,15 @@ img {
 .footer-social {
   margin-left: 120px;
   margin-right: 80px;
+  width: 208px;
 }
 
 .footer-link {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-footer {
+  gap: 16px;
 }
 .footer-link:hover {
   background-color: #31d0aa;
@@ -413,6 +417,7 @@ img {
 
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 .subscribe-title {
   color: var(--color-primari-light);
@@ -447,7 +452,6 @@ img {
 }
 
 .footer-form input {
-  margin-right: 24px;
   width: 264px;
   height: 40px;
   background-color: transparent;
@@ -455,10 +459,11 @@ img {
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-}
-.footer-email-container input {
   padding-left: 16px;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
+
 .footer-form input::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -616,6 +621,7 @@ img {
   padding-top: 72px;
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -666,11 +672,11 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
-  margin-bottom: 8px;
   width: 360px;
   padding-left: 38px;
   outline-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .form-fild label {
@@ -680,10 +686,12 @@ img {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  margin-bottom: 4px;
 }
 .input-icon-container {
   position: relative;
+  margin-bottom: 8px;
+  margin-top: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-icon-container:focus-within > .form-icon {
   fill: #4d5ae5;
@@ -692,7 +700,13 @@ img {
 .form-icon {
   position: absolute;
   left: 19px;
-  top: 14px;
+  top: 8px;
+  bottom: 8px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.name-svg {
+  top: 11px;
+  bottom: 11px;
 }
 .form-fild textarea::placeholder {
   color: rgba(46, 47, 66, 0.4);
@@ -710,6 +724,9 @@ img {
   padding-left: 16px;
   padding-top: 8px;
   outline-color: #4d5ae5;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 4px;
 }
 
 /*Checkbox*/
@@ -723,6 +740,8 @@ img {
   margin-bottom: 0;
   padding-left: 24px;
   position: relative;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-modal {
@@ -739,6 +758,7 @@ img {
   cursor: pointer;
   border-radius: 2px;
   position: absolute;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-modal input {
@@ -777,6 +797,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .submit-button-modal {
